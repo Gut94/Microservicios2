@@ -25,7 +25,7 @@ namespace MicroserviciosPrueba2
         //}
         public string colorSel { get; set; }
 
-
+        //ver si funciona
 
         //private int _nplazasmoto = null;
     }
