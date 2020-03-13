@@ -26,6 +26,7 @@ namespace MicroserviciosPrueba2
         public string colorSel { get; set; }
 
         //ver si funciona
+        //postman postgre
 
         //private int _nplazasmoto = null;
     }
