@@ -2,6 +2,13 @@
 
 namespace MicroserviciosPrueba2.Migrations
 {
+    /*
+     * En tools/nuget console ¿obsoleto?
+     * PM> enable-migrations //esto te crea este archivo
+     * PM> add-migrations initial //si quiero meter otra tabla lo repito cambiando el nombre initial
+     * PM> update-database
+     */
+     //solo hace falta add-migration y update-database
     public partial class initial2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)

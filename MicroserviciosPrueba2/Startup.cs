@@ -27,9 +27,11 @@ namespace MicroserviciosPrueba2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            //db postgre
+            //no seria necesario poner addentity si fuera sql y cambiar por usesqlite
             services.AddMvc();
             services.AddEntityFrameworkNpgsql().AddDbContext<AppDbContext>(opt =>
-                opt.UseNpgsql(Configuration.GetConnectionString("AppDbContext")));
+                opt.UseNpgsql(Configuration.GetConnectionString("AppDbContext")));//llama a appsetings.development.json
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
